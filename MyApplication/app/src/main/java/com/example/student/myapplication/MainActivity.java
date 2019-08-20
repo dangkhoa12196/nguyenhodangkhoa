@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     TextView textView;
     EditText editText;
+    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
                 editText=(EditText) findViewById(R.id.editText);
                 textView=(TextView) findViewById(R.id.textView);
                 textView.setText("Xin chao, "+editText.getText().toString());
+            }
+        });
+        button2=(Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText=(EditText) findViewById(R.id.editText);
+                textView=(TextView) findViewById(R.id.textView);
+                textView.setText("Goodbyte "+editText.getText().toString());
             }
         });
 
